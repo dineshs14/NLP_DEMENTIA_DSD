@@ -2,13 +2,17 @@
 
 ## An Integrated Technological Framework for Early Dementia Detection: Combining Communication Analysis, Security Protocols, and Machine Learning
 
-![Dementia Detection](https://github.com/yourusername/dementia-detection/raw/main/assets/logo.png)
-
 ## 📋 Overview
 
 This project implements a comprehensive framework for early dementia detection using multiple data sources and machine learning techniques. The system combines clinical assessment, voice analysis, and sleep pattern monitoring to provide a holistic approach to dementia risk assessment.
 
 Our framework offers a hierarchical security system, interactive visualizations, and automated reporting capabilities, making it accessible to patients, caregivers, clinical staff, and administrators.
+
+## 🔍 Research Background
+
+Dementia represents a significant global health challenge affecting over 50 million individuals worldwide, with projections suggesting an increase to 152 million by 2050. Early detection is crucial for timely intervention and effective management strategies.
+
+Traditional diagnostic methods (neuropsychological assessments, neuroimaging) are often time-consuming, expensive, and require specialized expertise. Our research explores a novel approach by analyzing communication patterns, sleep data, and implementing advanced security protocols.
 
 ## 🔑 Key Features
 
@@ -20,7 +24,7 @@ Our framework offers a hierarchical security system, interactive visualizations,
 - **Interactive Visualizations**: Risk breakdowns, feature importance, and temporal projections
 - **HIPAA Compliant**: Adherence to healthcare privacy regulations
 
-## 🛠️ Technologies Used
+## 💻 Technologies Used
 
 - **Frontend**: Streamlit
 - **Data Processing**: Pandas, NumPy
@@ -29,6 +33,38 @@ Our framework offers a hierarchical security system, interactive visualizations,
 - **Visualization**: Matplotlib, Plotly
 - **Report Generation**: ReportLab
 - **Security**: Custom authentication system
+
+## 📊 Components
+
+### Voice Analysis System
+- Extracts speech features like speech rate, pause frequency, pitch variance
+- Identifies word-finding difficulty, articulation precision, and voice tremor
+- Generates spectrograms for visual analysis of vocal biomarkers
+
+### Sleep Pattern Analysis
+- Monitors sleep duration, quality, and consistency
+- Tracks REM sleep percentage and sleep disruptions
+- Correlates sleep metrics with cognitive health indicators
+
+### Machine Learning Models
+- Implements Naive Bayes classifier for dementia risk prediction
+- Utilizes Random Forest for improved classification accuracy
+- Compares model performance using accuracy, precision, recall, F1-score, and AUC
+
+### Security System
+- Role-based access control
+- NFC-based authentication
+- Hierarchical data protection
+
+## 📊 Results
+
+Our framework demonstrates significant accuracy in early dementia detection by combining multiple data modalities:
+
+- **Voice analysis**: Identifies subtle changes in speech patterns
+- **Sleep monitoring**: Detects disruptions associated with cognitive decline
+- **Clinical assessment**: Integrates with traditional evaluation methods
+
+The system provides an overall dementia risk score with component breakdowns, highlighting the most significant contributing factors for each individual.
 
 ## 📦 Installation
 
@@ -61,105 +97,32 @@ The system provides different access levels with varying functionality:
 3. **Clinical Staff**: Advanced assessments, detailed analytics, medical recommendations
 4. **Administrator**: System configuration, model performance monitoring, user management
 
-## 🔍 Components
+## 📄 Future Work
 
-### Authentication System
+- **Multimodal Integration**: Incorporating facial expression analysis, gait monitoring, and digital biomarkers
+- **Federated Learning**: Maintaining data privacy while learning from diverse populations
+- **Explainable AI**: Providing transparent reasoning behind classifications
+- **Longitudinal Studies**: Tracking subtle changes over extended periods
+- **Personalized Interventions**: Automatically generating recommendations based on detected patterns
+- **Cross-cultural Validation**: Ensuring applicability across diverse linguistic and cultural contexts
+- **Edge Computing Solutions**: Reducing latency and network dependencies
 
-The security system implements role-based access control with simulated NFC authentication. Each access level has specific permissions and features.
+## 👥 Team
 
-```python
-# Example: Authentication
-access_granted = check_security_access("Clinical Staff", "CS_CODE_123")
+- **Dinesh S** - M.Tech student in Artificial Intelligence and Machine Learning at Vellore Institute of Technology
+- **Divyadharshini J** - M.Tech student in Artificial Intelligence and Machine Learning at Vellore Institute of Technology
+- **Srinidhi S** - M.Tech student in Artificial Intelligence and Machine Learning at Vellore Institute of Technology
+
+## 📝 Citation
+
+If you use this framework in your research, please cite our paper:
 ```
-
-### Clinical Assessment
-
-Collects patient information, including demographics, health conditions, lifestyle factors, and clinical measurements.
-
-### Voice Analysis
-
-Extracts speech features (e.g., speech rate, pause frequency, pitch variance) from audio recordings to identify potential cognitive impairment markers.
-
-```python
-# Example: Voice Analysis
-speech_features = analyze_voice(audio_file)
-```
-
-### Sleep Pattern Analysis
-
-Analyzes sleep data (e.g., sleep quality, duration, consistency) to identify patterns associated with dementia risk.
-
-```python
-# Example: Sleep Analysis
-sleep_risk = analyze_sleep_patterns(sleep_data)
-```
-
-### Machine Learning Model
-
-Implements a Naive Bayes classifier to predict dementia risk based on the integrated data sources.
-
-```python
-# Example: Risk Prediction
-risk_score = Predict(X, means, var, prior, classes)
-```
-
-### PDF Report Generation
-
-Generates comprehensive PDF reports with patient information, risk scores, and personalized recommendations.
-
-## 📊 Screenshots
-
-![Authentication](https://github.com/yourusername/dementia-detection/raw/main/assets/auth.png)
-*Authentication Screen*
-
-![Voice Analysis](https://github.com/yourusername/dementia-detection/raw/main/assets/voice.png)
-*Voice Analysis Dashboard*
-
-![Risk Assessment](https://github.com/yourusername/dementia-detection/raw/main/assets/risk.png)
-*Integrated Risk Assessment*
-
-## 📝 Example Report
-
-The system generates detailed PDF reports including:
-
-- Patient demographics
-- Risk assessment results
-- Key risk factors
-- Clinical recommendations
-- Lifestyle recommendations
-- Visualizations of risk components
-
-## 🔬 Research Foundation
-
-This project is based on research showing that early detection of dementia is possible through the analysis of:
-
-- Speech patterns and language changes
-- Sleep disturbances
-- Clinical biomarkers
-- Lifestyle and health factors
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-```bash
-# Development workflow
-git checkout -b feature/your-feature-name
-# Make your changes
-git commit -m "Add your feature"
-git push origin feature/your-feature-name
-# Submit a pull request
+S. Dinesh, J. Divyadharshini, and S. Srinidhi "An Integrated Technological Framework for Early Dementia Detection: Combining Communication Analysis, Security Protocols, and Machine Learning," Vellore Institute of Technology, 2025.
 ```
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Dinesh** - *Lead Developer*
-- **Divyadharshini** - *Machine Learning Engineer*
-- **Srinidhi** - *Machine Learning Engineer*
 
 ---
 
